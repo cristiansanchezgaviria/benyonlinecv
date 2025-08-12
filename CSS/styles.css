@@ -7,10 +7,14 @@ header {
     border: 0px;
     margin: 0px;
     background-color: #95c8ff;
-    top: 0;          /* Lo ancla a la parte superior */
-    left: 0;         /* Lo ancla a la izquierda */
-    width: 100%;     /* Le da el 100% del ancho */
-    z-index: 1000;   /* Lo coloca por encima de otros elementos */
+    top: 0;
+    /* Lo ancla a la parte superior */
+    left: 0;
+    /* Lo ancla a la izquierda */
+    width: 100%;
+    /* Le da el 100% del ancho */
+    z-index: 1000;
+    /* Lo coloca por encima de otros elementos */
 }
 
 
@@ -22,6 +26,10 @@ body {
     text-decoration: none;
 }
 
+.nav-bar {
+    padding-top: 50px;
+
+}
 
 /* Links de navegación */
 
@@ -32,21 +40,20 @@ body {
     text-decoration: none;
     padding: 8px;
     font-weight: 600;
-    transition: transform 0.3s ease-in-out;  /* Para que el efecto sea suave */
-    display: inline-block;  /* Esto es CLAVE para que funcione el 'scale' */
+    transition: transform 0.3s ease-in-out;
+    /* Para que el efecto sea suave */
+    display: inline-block;
+    /* Esto es CLAVE para que funcione el 'scale' */
     margin-right: 6px;
-
 }
 
-.nav-bar {
-    padding-top: 50px;
-    
-}
 
 .nav-link1:hover {
-    transform: scale(1.1);    /* Lo hace 10% más grande */
-    color: #007BFF;  /* Opcional: cambia el color del texto */
-    
+    transform: scale(1.1);
+    /* Lo hace 10% más grande */
+    color: #007BFF;
+    /* Opcional: cambia el color del texto */
+
 }
 
 .nav-link1:active {
@@ -60,12 +67,34 @@ body {
     font-weight: 600;
 }
 
+
+.title{
+    text-align: center;
+}
+
+.title2 {
+    text-align: center;
+}
+
+.container {
+    background-color:#7c4dff62;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .container-header {
     box-sizing: border-box;
     padding: 10px;
     position: fixed;
+}
 
-    
+.ul {
+    background-color: #7c4dff62;
+}
+
+.section {
+    justify-content: center;
 }
 
 .section1 {
@@ -76,10 +105,25 @@ body {
     justify-content: center;
     justify-items: center;
     text-align: center;
+    position: relative;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    cursor:pointer;
 }
 
 .avatar {
-    justify-self: center;
+    border: 15px #7c4dff;
+    border-style:var(#007BFF);
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo {
+    mix-blend-mode:darken;
+
 }
 
 p {
@@ -90,6 +134,8 @@ p {
 
 li {
     display: inline-block;
-    width: 48%;
+    width: 80%;
     vertical-align: top;
+    flex-direction: row;
 }
+
